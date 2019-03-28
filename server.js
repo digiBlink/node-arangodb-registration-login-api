@@ -8,7 +8,6 @@ const jwt = require('_helpers/jwt');
 const errorHandler = require('_helpers/error-handler');
 
 // Setup express server
-const port = process.env.PORT || 3000;
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -17,11 +16,11 @@ app.use(cors());
 
 // Connection to ArangoDB
 const db = new arangojs.Database({
-	url: `http://${dbConfig.host}:${dbConfig.port}`,
-	databaseName: dbConfig.database
+	url: `http://${config.db.host}:${config.db.port}`,
+	databaseName: config.db.database
 });
 
-db.useBasicAuth(dbConfig.username, dbConfig.password);
+db.useBasicAuth(config.db.username, config.db.password);
 
 // use JWT auth to secure the api
 app.use(jwt());
