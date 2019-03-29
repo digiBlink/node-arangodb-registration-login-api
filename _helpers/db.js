@@ -9,7 +9,7 @@ const db = new arangojs.Database({
 
 db.useBasicAuth(config.db.username, config.db.password);
 
-console.log('🥑 Connected to ArangoDB:', db.url + '/' + db.databaseName)
+console.log('🥑 Connected to ArangoDB: http://' + config.db.host + ':' + config.db.port + '/' + config.db.database)
 
 module.exports = {
     User: require('../users/user.model')
