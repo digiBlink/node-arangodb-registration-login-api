@@ -2,6 +2,8 @@
 
 NodeJS + Express.js + ArangoDB API for User Management, Authentication and Registration
 
+License: MIT
+
 ## Documentation
 
 In progress...
@@ -10,11 +12,11 @@ In progress...
 
 Required stuff:
 
-1. nodejs
-2. npm
-3. arangodb
+1. `nodejs`
+2. `npm`
+3. `arangodb`
 
-After that `npm install`
+After that just run `npm install` to get all dependencies.
 
 ## Running
 
