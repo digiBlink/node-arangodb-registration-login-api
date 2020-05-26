@@ -1,6 +1,6 @@
 {
     "name": "node-arangodb-registration-login-api",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "NodeJS + Express.js + ArangoDB API for User Management, Authentication and Registration",
     "license": "MIT",
     "repository": {
@@ -13,15 +13,15 @@
     },
     "dependencies": {
         "bcryptjs": "^2.4.3",
-        "body-parser": "^1.18.3",
+        "body-parser": "^1.19.0",
         "cors": "^2.8.5",
-        "express": "^4.16.4",
-        "express-jwt": "^5.3.1",
+        "express": "^4.17.1",
+        "express-jwt": "^5.3.3",
         "jsonwebtoken": "^8.5.1",
-        "arangojs": "^6.10.0",
+        "arangojs": "^6.14.1",
         "rootpath": "^0.1.2"
     },
     "devDependencies": {
-        "nodemon": "^1.18.10"
+        "nodemon": "^2.0.4"
     }
 }
